@@ -1,0 +1,49 @@
+.book-item-list-container {
+  list-style-type: none;
+}
+
+.book-item-cover-pic-img {
+  margin-right: 16px;
+  height: 175px;
+  width: 153px;
+  left: 438px;
+  top: 197px;
+  border-radius: 8px;
+}
+
+.book-item-card {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.book-item-heading {
+  color: #334155;
+  font-size: 19px;
+  font-family: roboto;
+  font-weight: 600;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.book-item-rating-container {
+  display: flex;
+}
+
+.book-item-star-icon {
+  color: #fbbf24;
+  margin-right: 4px;
+}
+
+.book-item-rating {
+  color: #475569;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-top: 0px;
+}
+
+.book-item-span {
+  color: #0284c7;
+}

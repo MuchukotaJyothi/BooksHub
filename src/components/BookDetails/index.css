@@ -1,0 +1,44 @@
+.book-item-details-container {
+  margin-top: 0px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.book-details-heading {
+  color: #334155;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.book-details-para {
+  color: #475569;
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.book-details-container-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  justify-content: space-between;
+}
+
+.book-details-card {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

@@ -1,0 +1,129 @@
+.home-bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.bg-container {
+  min-height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.top-rated-books-container {
+  background-color: #ffffff;
+  padding: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.top-rated-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  font-family: 'Roboto';
+  height: 38px;
+  padding: 8px 16px;
+  color: #f8fafc;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.loader-container-top-rated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-container {
+  margin-top: 10px;
+}
+
+.home-heading {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: left;
+  color: #1e293b;
+  margin-bottom: 0px;
+}
+
+.home-para {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  max-width: 70%;
+  color: #475569;
+}
+
+.top-rated-heading-element {
+  width: 195px;
+  height: 32px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #989898;
+}
+
+.failure-btn {
+  font-family: 'Roboto';
+  height: 38px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.failure-para {
+  color: #475569;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.failure-img {
+  width: 447px;
+  height: 190px;
+  margin-bottom: 20px;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}

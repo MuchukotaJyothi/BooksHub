@@ -1,0 +1,116 @@
+.book-shelves-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  justify-content: space-between;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .books-container {
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .filters-list {
+    background-color: #ffffff;
+    width: 21%;
+    padding-top: 26px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    min-height: 100vh;
+  }
+
+  .filters-list-heading {
+    color: #334155;
+    font-size: 22px;
+    font-family: roboto;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}
+
+.heading-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    margin-right: 480px;
+    color: #334155;
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  border: 1px solid #475569;
+}
+
+.search-input {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  flex-grow: 0;
+  width: 250px;
+}
+
+.search-icon {
+  color: #475569;
+  width: 20px;
+  height: 20px;
+}
+
+.no-books-para {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: roboto;
+}
+
+.empty-books-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.search-icon-button {
+  background-color: #ffffff;
+  border-width: 0px;
+}
+
+.books-list-shelves {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
