@@ -144,6 +144,11 @@ class Home extends Component {
             enjoyed in the past, and we will give you surprisingly insightful
             recommendations.
           </p>
+          <Link to="/shelf">
+            <button type="button" className="home-btn-small">
+              Find Books
+            </button>
+          </Link>
           <div className="top-rated-books-container">
             <div className="top-rated-heading">
               <h1 className="top-rated-heading-element">Top Rated Books</h1>

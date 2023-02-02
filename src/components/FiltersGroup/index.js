@@ -3,18 +3,16 @@ import './index.css'
 const FiltersGroup = props => {
   const {isActive, categoryDetails, changeCategory} = props
   const {label, value} = categoryDetails
-  const categoryClassName = isActive
-    ? `category-name active-category-name`
-    : `category-name`
+  const categoryClassName = isActive ? `active-category-name` : ''
 
   const onClickCategoryItem = () => changeCategory(value)
 
   return (
-    <li className={categoryClassName}>
+    <li className="filter-group-list">
       <button
         type="button"
         onClick={onClickCategoryItem}
-        className={categoryClassName}
+        className={`category-name ${categoryClassName}`}
       >
         {label}
       </button>

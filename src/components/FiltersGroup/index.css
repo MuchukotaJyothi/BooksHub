@@ -3,10 +3,8 @@
   margin-top: 0px;
 }
 
-.category-item {
+.filter-group-list {
   list-style-type: none;
-  margin-top: 16px;
-  cursor: pointer;
 }
 
 .category-name {
@@ -22,12 +20,35 @@
   text-align: left;
 }
 
-@media screen and (min-width: 768px) {
+.active-category-name {
+  color: #0967d2;
+}
+
+@media screen and (min-width: 992px) {
   .category-name {
     font-size: 16px;
   }
 }
 
-.active-category-name {
-  color: #0967d2;
+@media screen and (max-width: 991px) {
+  .category-name {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 60px;
+    border-color: #2d9cca;
+    color: #2d9cca;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .active-category-name {
+    color: #ffffff;
+    background-color: #0967d2;
+  }
 }

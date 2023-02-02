@@ -42,7 +42,11 @@ const Header = props => {
     </>
   )
 
-  const onClickMenu = () => renderListItems()
+  const onClickMenu = () => {
+    const menuItem = document.getElementById('menu')
+    menuItem.classList.toggle('hide')
+    menuItem.classList.toggle('show')
+  }
 
   return (
     <nav className="navbar-container">
@@ -52,8 +56,31 @@ const Header = props => {
           alt="website logo"
           className="nav-logo"
         />
-        <button type="button" onClick={onClickMenu}>
-          <GiHamburgerMenu />
+        <button type="button" onClick={onClickMenu} className="hamburger-btn">
+          <GiHamburgerMenu className="hamburger-menu" />
+        </button>
+      </div>
+
+      <div id="menu" className="hide">
+        <ul className="nav-menu-small">
+          <li className="nav-menu-item">
+            <Link to="/" className={`nav-link ${homeClass}`}>
+              Home
+            </Link>
+          </li>
+
+          <li className="nav-menu-item">
+            <Link to="/shelf" className={`nav-link ${shelvesActive}`}>
+              Bookshelves
+            </Link>
+          </li>
+        </ul>
+        <button
+          type="button"
+          className="logout-desktop-btn"
+          onClick={onClickLogout}
+        >
+          Logout
         </button>
       </div>
 

@@ -37,8 +37,14 @@
 .book-details-card {
   display: flex;
   align-items: center;
-
   justify-content: center;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 760px) {
+  .book-details-card {
+    display: flex;
+    flex-direction: column;
+  }
 }

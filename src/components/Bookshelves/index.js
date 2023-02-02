@@ -126,13 +126,11 @@ class Bookshelves extends Component {
     const showSuccessView = booksList.length > 0
 
     return showSuccessView ? (
-      <div className="all-books-container">
-        <ul className="books-list-shelves">
-          {booksList.map(each => (
-            <BookItem bookDetails={each} key={each.id} />
-          ))}
-        </ul>
-      </div>
+      <ul className="books-list-shelves">
+        {booksList.map(each => (
+          <BookItem bookDetails={each} key={each.id} />
+        ))}
+      </ul>
     ) : (
       <div className="empty-books-list">
         <img
@@ -174,17 +172,37 @@ class Bookshelves extends Component {
     return (
       <div className="book-shelves-container">
         <Header isHomeActive={false} isShelvesActive />
+
+        <div className="search-input-container-small">
+          <input
+            value={searchInput}
+            type="search"
+            className="search-input"
+            placeholder="Search"
+            onChange={this.onChangeSearchInput}
+            onKeyDown={this.onEnterSearchInput}
+          />
+          <button
+            type="button"
+            testid="searchButton"
+            className="search-icon-button"
+          >
+            <BsSearch className="search-icon" />
+          </button>
+        </div>
         <div className="books-container">
           <ul className="filters-list">
             <h1 className="filters-list-heading">Bookshelves</h1>
-            {bookshelvesList.map(each => (
-              <FiltersGroup
-                key={each.id}
-                isActive={each.value === activeCategoryId}
-                categoryDetails={each}
-                changeCategory={this.changeCategory}
-              />
-            ))}
+            <div className="book-shelves-filter-btn-container">
+              {bookshelvesList.map(each => (
+                <FiltersGroup
+                  key={each.id}
+                  isActive={each.value === activeCategoryId}
+                  categoryDetails={each}
+                  changeCategory={this.changeCategory}
+                />
+              ))}
+            </div>
           </ul>
           <div>
             <div className="heading-search-container">

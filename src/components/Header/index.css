@@ -48,6 +48,7 @@
   margin-left: 14px;
   cursor: pointer;
   outline: none;
+  height: 36px;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,6 +60,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hamburger-menu {
+    font-size: 22px;
+    color: #475569;
+  }
+
+  .hamburger-btn {
+    background-color: #ffffff;
+    border-width: 0px;
   }
 }
 .navbar-container {
@@ -68,4 +83,24 @@
 
 .active-class {
   color: #0284c7;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  background-color: #e5e5e5;
+  align-items: center;
+}
+
+.nav-menu-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
